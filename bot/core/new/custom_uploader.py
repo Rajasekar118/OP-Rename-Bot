@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005 & @subinps
+
 # Bruh!
 # Took a huge time to make this script.
 # So Plis,
@@ -193,8 +193,8 @@ class CustomUploader:
                         if file_size_ == 0:
                             raise ValueError("File size equals to 0 B")
 
-                        if file_size_ > 2000 * 1024 * 1024:
-                            raise ValueError("Telegram doesn't support uploading files bigger than 2000 MiB")
+                        if file_size_ > 4000 * 1024 * 1024:
+                            raise ValueError("Telegram doesn't support uploading files bigger than 4000 MiB")
 
                         is_missing_part = _n_file_id is not None
                         file_id_ = file_id_ or self.rnd_id()
@@ -336,8 +336,8 @@ class CustomUploader:
                             if file_size_ == 0:
                                 raise ValueError("File size equals to 0 B")
 
-                            if file_size_ > 2000 * 1024 * 1024:
-                                raise ValueError("Telegram doesn't support uploading files bigger than 2000 MiB")
+                            if file_size_ > 4000 * 1024 * 1024:
+                                raise ValueError("Telegram doesn't support uploading files bigger than 4000 MiB")
 
                             is_missing_part = _n_file_id is not None
                             file_id_ = file_id_ or self.rnd_id()
